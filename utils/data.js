@@ -1,7 +1,7 @@
 const request = require('postman-request');
 
 const getAllDishes = (callback) => {
-    request('http://localhost:3001/dishes', (error, res, body) => {
+    request('https://origen-api-belu.herokuapp.com/dishes', (error, res, body) => {
         if(error){
           console.log('Error', error)  
           return callback(error, undefined);
